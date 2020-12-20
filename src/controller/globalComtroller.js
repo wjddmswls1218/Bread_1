@@ -4,13 +4,13 @@ const homeController = (req, res) => {
     res.render("screens/home");
 };
 
-const breadController = (req, res) => {
+const breadController = async (req, res) => {
     const result = await Bread.find({}, {});
 
     res,render("screens/bread", { bread: result });
 };
 
-export default globalController = {
+export const globalController = {
     homeController,
     breadController,
 };

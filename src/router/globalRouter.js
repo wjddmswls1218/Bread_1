@@ -1,4 +1,5 @@
 import express from "express";
+import { globalController } from "../controller/globalComtroller";
 
 const globalRouter = express.Router();
 
